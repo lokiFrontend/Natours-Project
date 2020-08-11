@@ -10,7 +10,6 @@
 
     [class^="col-"] {
         float: left;
-        padding: 1rem;
 
         &:not(:last-child){
             margin-right: $gutter-width;
