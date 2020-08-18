@@ -186,7 +186,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
             <div class="u-center-text u-margin-bottom-large">
                 <h2 class="heading-secondary">
                     Most Popular Tours
@@ -220,7 +220,7 @@
                                     <p class="card__price-only">only</p>
                                     <p class="card__price-value">$297</p>
                                 </div>
-                                <a href="#" class="btn btn--white btn--animated">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -252,7 +252,7 @@
                                     <p class="card__price-only">only</p>
                                     <p class="card__price-value">$497</p>
                                 </div>
-                                <a href="#" class="btn btn--white btn--animated">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -285,7 +285,7 @@
                                     <p class="card__price-only">only</p>
                                     <p class="card__price-value">$897</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -298,9 +298,9 @@
         <section class="section-stories">
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
-                    <source src="img/video.mp4" type="video/mp4" >
+                    <source src="img/video.mp4" type="video/mp4">
                     <source src="img/video.webm" type="video/webm">
-                        The video is not supported!
+                    The video is not supported!
                 </video>
             </div>
             <div class="u-center-text u-margin-bottom-large">
@@ -364,11 +364,11 @@
                             <div class="form__group">
                                 <input type="text" class="form__input" id="name" placeholder="Full Name" required>
                                 <label for="name" class="form__label">Full Name</label>
-                            </div>                                
+                            </div>
                             <div class="form__group">
                                 <input type="email" class="form__input" id="email" placeholder="Email Address" required>
                                 <label for="email" class="form__label">Email Address</label>
-                            </div>    
+                            </div>
                             <div class="form__group u-margin-bottom-medium">
                                 <div class="form__group-radio">
                                     <input type="radio" name="size" id="small" class="form__radio-input" checked>
@@ -384,35 +384,62 @@
                                         Large tour group
                                     </label>
                                 </div>
-                            </div>  
+                            </div>
                             <button class="btn btn--green">Next step &rarr;</button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="footer">
-            <div class="footer__logo u-margin-bottom-large">
-                <img src="./img/logo-green-2x.png" alt="Footer logo" class="footer__logo-img">
-            </div>
-            <div class="row">
-                <div class="col-1-of-2">
-                    <ul class="footer__list">
-                        <li class="footer__list-item"><a href="#" class="footer__link">Company</a></li>
-                        <li class="footer__list-item"><a href="#" class="footer__link">Contact Us</a></li>
-                        <li class="footer__list-item"><a href="#" class="footer__link">Careers</a></li>
-                        <li class="footer__list-item"><a href="#" class="footer__link">Privacy Policy</a></li>
-                        <li class="footer__list-item"><a href="#" class="footer__link">Terms</a></li>
-                    </ul>
-                </div>
-                <div class="col-1-of-2">
-                    <div class="footer__copyright">
-                        Built from online course for <a href="#" class="footer__link">advanced css and sass</a> by Jonas Schmedtmann. Copyright &copy; by Jonas Schmedtmann. By <a href="#" class="footer__link">Lokesh Aggarwal</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
     </main>
+    <footer class="footer">
+        <div class="footer__logo u-margin-bottom-large">
+            <img src="./img/logo-green-2x.png" alt="Footer logo" class="footer__logo-img">
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="#" class="footer__link">Company</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Contact Us</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Careers</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Terms</a></li>
+                </ul>
+            </div>
+            <div class="col-1-of-2">
+                <div class="footer__copyright">
+                    Built from online course for <a href="#" class="footer__link">advanced css and sass</a> by Jonas
+                    Schmedtmann. Copyright &copy; by Jonas Schmedtmann. By <a href="#" class="footer__link">Lokesh
+                        Aggarwal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__images">
+                <img src="img/nat-8.jpg" alt="image1" class="popup__image">
+                <img src="img/nat-9.jpg" alt="image2" class="popup__image">
+            </div>
+            <div class="popup__details">
+                <a href="#section-tours" class="popup__close">&#10540;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">
+                    start booking now
+                </h2>
+                <h3 class="heading_tertiary u-margin-bottom-small">
+                    Import &dash; please read these terms before booking
+                </h3>
+                <p class="popup__text u-margin-bottom-medium">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, quidem atque numquam blanditiis
+                    fugit quibusdam beatae voluptatem provident! Tenetur magni aliquam labore dolorum soluta cumque
+                    atque ipsam aperiam repudiandae nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, quidem atque numquam blanditiis
+                    fugit quibusdam beatae voluptatem provident! Tenetur magni aliquam labore dolorum soluta cumque
+                    atque ipsam aperiam repudiandae nobis.
+                </p>
+                <a href="#" class="btn btn--green">Book now</a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

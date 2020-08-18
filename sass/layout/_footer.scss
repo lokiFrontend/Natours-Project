@@ -4,6 +4,11 @@
     font-size: 1.5rem;
     color: $color-gray-light-1;
 
+    @include respond(tab-port){
+        text-align: center;
+        padding: 5rem 0;
+    }
+
     &__logo{
         text-align: center;
     }
@@ -51,6 +56,11 @@
         width: 80%;
         border-top: 1px solid $color-gray-dark;
         float: right;
+
+        @include respond(tab-port){
+           float: none;
+           width: 100%;
+        }
     }
 
 }
