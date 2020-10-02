@@ -7,6 +7,7 @@
     box-shadow: 0 1.5rem 6rem rgba($color-black, 0.15);
     @include clearfix;
     transform: skewX(-12deg);
+    display: flex;
 
     @include respond(phone){
         transform: skewX(0);
@@ -18,7 +19,7 @@
     &__figure{
         height: 15rem;
         width: 15rem;
-        float: left;
+        // float: left;
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
